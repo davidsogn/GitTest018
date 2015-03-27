@@ -70,11 +70,11 @@ def main():
                     else:
                         print url
             else:
-                print "Not able to generate playlist!"
+                print "Not able to generate playlist."
         except ApiException as e:
-            sys.exit("An API error occured({})! Exiting...".format(str(e.status)))
+            sys.exit("An API error occurred({}).".format(str(e.status)))
     else:
-        print "Welcome to PlaylistPoetry interactive mode."
+        print "Welcome to PyPlaylist interactive mode."
         print "Enter a message to generate a playlist."
         print "Type :exit to quit."
         while True:
@@ -111,9 +111,9 @@ def main():
                         print item.name + ": " + url
 
                 else:
-                    print "Not able to generate playlist!"
+                    print "Not able to generate playlist."
             except ApiException as e:
-                sys.exit("An API error occured({})! Exiting...".format(str(e.status)))
+                sys.exit("An API error occured({}).".format(str(e.status)))
 
 
 
